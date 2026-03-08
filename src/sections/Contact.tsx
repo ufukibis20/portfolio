@@ -40,7 +40,7 @@ function Contact() {
         </a>
 
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/ufuk-ibis/"
           target="_blank"
           rel="noreferrer"
           style={{
