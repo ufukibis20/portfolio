@@ -39,7 +39,6 @@ function Journey() {
               </div>
 
               <div className="journey-card__content">
-                <span className="journey-card__year">{step.year}</span>
                 <h3 className="journey-card__title">{step.title}</h3>
                 <p className="journey-card__text">{step.text}</p>
               </div>
