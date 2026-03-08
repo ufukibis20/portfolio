@@ -1,73 +1,116 @@
-# React + TypeScript + Vite
+# Ufuk Ibis – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal developer portfolio built with React and TypeScript.
+The website presents my frontend projects, showcases my technical skills, and provides links to live demos and GitHub repositories.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Open the Portfolio](https://https://portfolio-sage-xi-huhjr2p5f4.vercel.app)
 
-## React Compiler
-halloooo
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Overview
 
-## Expanding the ESLint configuration
+This portfolio was created to showcase my frontend development work and provide an overview of my projects and technical skills.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The website includes:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* A hero section introducing me as a frontend developer
+* A projects section highlighting selected applications
+* An about section describing my background
+* A contact section linking to GitHub and professional profiles
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The goal of the project is to present my work in a clean, modern, and accessible way for recruiters and potential employers.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Features
+
+* Responsive portfolio layout
+* Project cards with descriptions and technology stacks
+* Links to GitHub repositories and live demos
+* About section with background information
+* Contact section with external links
+* Component-based React architecture
+
+## Tech Stack
+
+* React
+* TypeScript
+* Vite
+* HTML
+* CSS
+
+## Project Structure
+
+```bash
+src/
+  components/
+    ProjectCard.tsx
+  sections/
+    Hero.tsx
+    Projects.tsx
+    About.tsx
+    Contact.tsx
+  data/
+    projects.ts
+  App.tsx
+  main.tsx
+
+public/
+  kanban.png
+  movie.png
+  dashboard.png
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Install dependencies
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### Start development server
+
+```bash
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+## Projects Featured
+
+### Kanban Task Manager
+
+Task management application with drag and drop functionality.
+
+Tech: React, TypeScript, Local Storage
+
+### Movie Explorer
+
+Movie search application using the TMDB API with favorites and modal details.
+
+Tech: React, TypeScript, API Integration
+
+### Finance Dashboard
+
+Finance dashboard with charts, KPI cards and category filtering.
+
+Tech: React, TypeScript, Recharts
+
+## Learning Goals
+
+This project was built to strengthen practical frontend development skills in:
+
+* Building modern portfolio websites
+* Component-based architecture with React
+* Working with TypeScript in React applications
+* Structuring frontend projects cleanly
+* Presenting projects in a professional way
+
+## Author
+
+Ufuk Ibis
+
+GitHub: https://github.com/ufukibis20
