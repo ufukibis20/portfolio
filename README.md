@@ -5,7 +5,7 @@ The website presents my frontend projects, showcases my technical skills, and pr
 
 ## Live Demo
 
-[Open the Portfolio](https://https://portfolio-sage-xi-huhjr2p5f4.vercel.app)
+[Open the Portfolio](https://portfolio-sage-xi-huhjr2p5f4.vercel.app)
 
 ## Overview
 
