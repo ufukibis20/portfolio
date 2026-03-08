@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Kanban Task Manager",
     description:
-      "Task management application with drag and drop functionality.",
+      "A task management application with drag-and-drop functionality, local storage persistence and a clean board layout for organizing workflows efficiently.",
     tech: ["React", "TypeScript", "Local Storage"],
     github: "https://github.com/ufukibis20/kanban-task-manager",
     live: "https://kanban-task-manager-rho-orpin.vercel.app",
@@ -11,8 +11,8 @@ export const projects = [
   {
     title: "Movie Explorer",
     description:
-      "Movie search application using the TMDB API with favorites and modal details.",
-    tech: ["React", "TypeScript", "API"],
+      "A movie discovery app built with API integration, search functionality, favorites management and detailed modal views for a smooth browsing experience.",
+    tech: ["React", "TypeScript", "TMDB API"],
     github: "https://github.com/ufukibis20/movie-explorer",
     live: "https://movie-explorer-jet-delta.vercel.app",
     image: "/movie.png",
@@ -20,7 +20,7 @@ export const projects = [
   {
     title: "Finance Dashboard",
     description:
-      "Finance dashboard with charts, KPI cards and filtering.",
+      "A responsive dashboard for financial data visualization featuring KPI cards, interactive charts and filtering to present complex information in a clear way.",
     tech: ["React", "TypeScript", "Recharts"],
     github: "https://github.com/ufukibis20/finance-dashboard",
     live: "https://finance-dashboard-blue-two.vercel.app",

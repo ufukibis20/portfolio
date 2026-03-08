@@ -1,3 +1,5 @@
+import "./ProjectCard.css";
+
 type ProjectCardProps = {
   title: string;
   description: string;
@@ -16,83 +18,30 @@ function ProjectCard({
   image,
 }: ProjectCardProps) {
   return (
-    <div
-      style={{
-        background: "#ffffff",
-        border: "1px solid #e5e7eb",
-        borderRadius: "16px",
-        overflow: "hidden",
-        boxShadow: "0 8px 20px rgba(0, 0, 0, 0.06)",
-      }}
-    >
-      <img
-        src={image}
-        alt={title}
-        style={{
-          width: "100%",
-          height: "220px",
-          objectFit: "cover",
-          display: "block",
-          background: "#f3f4f6",
-        }}
-      />
+    <article className="project-card">
+      <div className="project-card__image-wrapper">
+        <img src={image} alt={title} className="project-card__image" />
+      </div>
 
-      <div style={{ padding: "20px" }}>
-        <h3
-          style={{
-            marginTop: 0,
-            marginBottom: "12px",
-            fontSize: "22px",
-            color: "#111827",
-          }}
-        >
-          {title}
-        </h3>
+      <div className="project-card__content">
+        <h3 className="project-card__title">{title}</h3>
 
-        <p
-          style={{
-            marginTop: 0,
-            marginBottom: "14px",
-            color: "#4b5563",
-            lineHeight: 1.6,
-          }}
-        >
-          {description}
-        </p>
+        <p className="project-card__description">{description}</p>
 
-        <div style={{ marginBottom: "18px" }}>
+        <div className="project-card__tech">
           {tech.map((item) => (
-            <span
-              key={item}
-              style={{
-                display: "inline-block",
-                marginRight: "8px",
-                marginBottom: "8px",
-                padding: "6px 10px",
-                background: "#eef2ff",
-                borderRadius: "999px",
-                fontSize: "13px",
-                color: "#3730a3",
-              }}
-            >
+            <span key={item} className="project-card__tag">
               {item}
             </span>
           ))}
         </div>
 
-        <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+        <div className="project-card__links">
           <a
             href={github}
             target="_blank"
             rel="noreferrer"
-            style={{
-              textDecoration: "none",
-              padding: "10px 14px",
-              borderRadius: "10px",
-              background: "#111827",
-              color: "#ffffff",
-              fontSize: "14px",
-            }}
+            className="project-card__button project-card__button--dark"
           >
             GitHub
           </a>
@@ -101,20 +50,13 @@ function ProjectCard({
             href={live}
             target="_blank"
             rel="noreferrer"
-            style={{
-              textDecoration: "none",
-              padding: "10px 14px",
-              borderRadius: "10px",
-              background: "#2563eb",
-              color: "#ffffff",
-              fontSize: "14px",
-            }}
+            className="project-card__button project-card__button--blue"
           >
             Live Demo
           </a>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 
