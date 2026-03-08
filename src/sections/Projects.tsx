@@ -7,7 +7,7 @@ function Projects() {
       <div className="container">
         <div className="projects-section__intro">
           <span className="projects-section__eyebrow">Selected Work</span>
-          <h2 className="section-title">Projects</h2>
+          <h2 className="section-title">Projekte</h2>
           <p className="section-subtitle">
             Eine Auswahl von Projekten, mit denen ich meine Kenntnisse in React,
             TypeScript und moderner UI-Entwicklung praktisch umgesetzt habe.

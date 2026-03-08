@@ -28,19 +28,19 @@ function Navbar() {
 
         <nav className={`navbar__nav ${menuOpen ? "navbar__nav--open" : ""}`}>
           <a href="#projects" className="navbar__link" onClick={handleLinkClick}>
-            Projects
+            Projekte
           </a>
           <a href="#tech-stack" className="navbar__link" onClick={handleLinkClick}>
             Tech Stack
           </a>
           <a href="#about" className="navbar__link" onClick={handleLinkClick}>
-            About
+            Über mich
           </a>
           <a href="#journey" className="navbar__link" onClick={handleLinkClick}>
             Journey
           </a>
           <a href="#contact" className="navbar__link" onClick={handleLinkClick}>
-            Contact
+            Kontakt
           </a>
         </nav>
       </div>
