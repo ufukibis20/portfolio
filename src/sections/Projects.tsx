@@ -5,19 +5,16 @@ function Projects() {
   return (
     <section id="projects" className="section section-alt">
       <div className="container">
-        <h2 className="section-title">Projects</h2>
-        <p className="section-subtitle">
-          Eine Auswahl von Projekten, mit denen ich meine React- und
-          TypeScript-Kenntnisse praktisch umgesetzt habe.
-        </p>
+        <div className="projects-section__intro">
+          <span className="projects-section__eyebrow">Selected Work</span>
+          <h2 className="section-title">Projects</h2>
+          <p className="section-subtitle">
+            Eine Auswahl von Projekten, mit denen ich meine Kenntnisse in React,
+            TypeScript und moderner UI-Entwicklung praktisch umgesetzt habe.
+          </p>
+        </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "28px",
-          }}
-        >
+        <div className="projects-section__grid">
           {projects.map((project) => (
             <ProjectCard
               key={project.title}
@@ -27,6 +24,8 @@ function Projects() {
               github={project.github}
               live={project.live}
               image={project.image}
+              featured={project.featured}
+              outcome={project.outcome}
             />
           ))}
         </div>

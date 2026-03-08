@@ -7,6 +7,8 @@ export const projects = [
     github: "https://github.com/ufukibis20/kanban-task-manager",
     live: "https://kanban-task-manager-rho-orpin.vercel.app",
     image: "/kanban.png",
+    featured: true,
+    outcome: "Built for structured task management with a clear and intuitive UI.",
   },
   {
     title: "Movie Explorer",
@@ -16,6 +18,8 @@ export const projects = [
     github: "https://github.com/ufukibis20/movie-explorer",
     live: "https://movie-explorer-jet-delta.vercel.app",
     image: "/movie.png",
+    featured: false,
+    outcome: "Focused on API handling, filtering and a polished browsing experience.",
   },
   {
     title: "Finance Dashboard",
@@ -25,5 +29,7 @@ export const projects = [
     github: "https://github.com/ufukibis20/finance-dashboard",
     live: "https://finance-dashboard-blue-two.vercel.app",
     image: "/finance.png",
+    featured: false,
+    outcome: "Designed to present complex data in a clean and understandable format.",
   },
 ];
